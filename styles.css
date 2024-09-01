@@ -1,0 +1,56 @@
+/* styles.css */
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.section {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.section.active {
+    display: block;
+}
+
+.custom-file-label::after {
+    content: "Browse";
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#fileDisplayArea {
+    font-size: 1.2rem;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+#fileDisplayArea img {
+    max-width: 40px;
+    margin-right: 10px;
+}

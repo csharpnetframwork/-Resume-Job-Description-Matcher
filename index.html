@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.V Matcher with Job Description</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1 class="text-primary">C.V Matcher with Job Description</h1>
+        </header>
+
+        <div id="aboutSection" class="section active">
+            <h2 class="text-dark">About</h2>
+            <p>This tool helps you match your resume with a job description by comparing your experience and key skills.</p>
+            <p>Follow these steps:</p>
+            <ol>
+                <li>Upload your resume.</li>
+                <li>Paste the job description.</li>
+                <li>See the matching percentage based on your experience and skills.</li>
+            </ol>
+            <button id="toUploadBtn" class="btn btn-primary mt-3">Get Started</button>
+        </div>
+
+        <div id="uploadSection" class="section">
+            <h2 class="text-dark">Upload Resume</h2>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="resumeInput" accept=".pdf,.doc,.docx">
+                <label class="custom-file-label" for="resumeInput">Choose file</label>
+            </div>
+            <button id="uploadResumeBtn" class="btn btn-primary mt-3">Upload</button>
+            <div id="fileDisplayArea" class="mt-3"></div>
+            <div id="uploadResponse" class="text-success mt-3"></div>
+            <button id="toDescriptionBtn" class="btn btn-secondary mt-3">Next: Job Description</button>
+        </div>
+
+        <div id="descriptionSection" class="section">
+            <h2 class="text-dark">Job Description</h2>
+            <textarea id="jobDescription" class="form-control" rows="5" placeholder="Paste job description here..."></textarea>
+            <button id="toResultBtn" class="btn btn-primary mt-3">Check Result</button>
+        </div>
+
+        <div id="resultSection" class="section">
+            <h2 class="text-dark">Match Result</h2>
+            <div id="resultOutput" class="text-info"></div>
+            <button id="restartBtn" class="btn btn-secondary mt-3">Start Over</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
